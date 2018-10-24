@@ -92,6 +92,7 @@ function updateMarkov(generated_length, markovLength){
   .then( r => r.text() )
   .then( t => {
     LoadedNotes = t;
+    console.log(LoadedNotes);
     LoadedNotesSplit = LoadedNotes.split(' ');
     // console.log("Notes", LoadedNotes);
     // console.log("Notes split", LoadedNotesSplit);
@@ -100,7 +101,7 @@ function updateMarkov(generated_length, markovLength){
       rm = new RiMarkov(markovLength);
       // if loading notes
       rm.loadTokens(LoadedNotesSplit);
-      // rm.print();
+      rm.print();
       notes = rm.generateTokens(generated_length);
       console.log(notes);
       for (var i = 0; i < notes.length; i++) {
