@@ -143,7 +143,7 @@ function updateMarkov(generated_length, markovLength){
         "type": "sine"
       },
       "envelope": {
-        "attack": 0.3,
+        "attack": 0.2,
         "decay": 0.9,
         "sustain": 0.6,
         "release": 7,
