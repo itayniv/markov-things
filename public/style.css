@@ -160,7 +160,13 @@
   }
 
   .output-style {
+    font-family: 'Roboto', sans-serif;
     text-align: center;
+  }
+
+  .text-style {
+    font-family: 'Roboto', sans-serif;
+    /* text-align: center; */
   }
 
 
